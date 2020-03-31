@@ -18,6 +18,7 @@ import FAQ from './pages/policiesAndConditions/faq';
 import Users from './pages/users';
 import User from './pages/user';
 import NotFound from './pages/404';
+import Example from './pages/example';
 
 const Root = ({ refetch, session }) =>
   <Switch>
@@ -86,6 +87,11 @@ const Root = ({ refetch, session }) =>
         <FAQ {...props} />
       </MainLayout>
     )} />
+       <Route path="/example" render={props => (
+      <MainLayout>
+        <Example {...props} />
+      </MainLayout>
+    )} />
     <Route path="/" exact render={props => (
       <MainLayout>
         <Signin {...props} refetch={refetch} />
@@ -96,6 +102,7 @@ const Root = ({ refetch, session }) =>
         <NotFound {...props} />
       </MainLayout>
     )} />
+ 
   </Switch>
   ;
 
