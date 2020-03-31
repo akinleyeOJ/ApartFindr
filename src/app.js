@@ -87,7 +87,7 @@ const Root = ({ refetch, session }) =>
         <FAQ {...props} />
       </MainLayout>
     )} />
-       <Route path="/example" render={props => (
+    <Route path="/example" render={props => (
       <MainLayout>
         <Example {...props} />
       </MainLayout>
