@@ -1,4 +1,4 @@
 {
-  "siteURL": "http://localhost:3000",
-  "environment": "development"
+  "siteURL": "https://https://apatfindr.herokuapp.com/",
+  "environment": "production"
 }
