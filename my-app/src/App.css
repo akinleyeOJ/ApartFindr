@@ -112,7 +112,7 @@ h6 {
   color: var(--primaryColor);
 }
 .nav-links {
-  height: 0;
+  height: 0;  
   overflow: hidden;
   transition: var(--mainTransition);
   list-style-type: none;
