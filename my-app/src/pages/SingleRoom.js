@@ -22,13 +22,33 @@ static contextType = RoomContext;
         const { getRoom } = this.context;
         const room = getRoom(this.state.slug);
         if(!room){
-             return <div className="error">
+             return ( <div className="error">
                  <h3>No room of such</h3>
                  <Link to="/rooms" className="btn-primary">
                      back to rooms
                  </Link>
              </div>
+             );
         }
-        return <div> hello from the single room{room.name} </div>;
+        const {
+            name, 
+            description,
+            capacity,
+            size,
+            price,
+            extras,
+            breakfast,
+            pets,
+            images
+        } = room;
+        return (
+           <Hero hero="roomsHero">
+              <Banner title={`${name} room`}>
+                  <Link to="/rooms" className="btn-primary">
+                      back to rooms
+                  </Link>
+              </Banner>
+           </Hero>
+        );
     }
 }
