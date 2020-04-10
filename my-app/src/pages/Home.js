@@ -6,6 +6,7 @@ import Services from '../components/Services';
 import Naira from 'react-naira';
 import FeaturedRooms from '../components/FeaturedRooms';
 
+
 export default function Home() {
     return ( 
         <>
@@ -17,6 +18,7 @@ export default function Home() {
         </Hero>
         <Services />
         <FeaturedRooms />
+       
         </>
     );
     
