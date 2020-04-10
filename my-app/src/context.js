@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import items from './data'
+
+
 const RoomContext = React.createContext();
 
 class RoomProvider extends Component {
@@ -28,10 +30,10 @@ class RoomProvider extends Component {
              let id = item.sys.id
              let images = item.fields.images.map(image => image.fields.file.url);
 
-             let room = {...item.fields,images,id };
+             let room = { ...item.fields,images,id };
              return room;
         });
-        return tempItems
+        return tempItems;
     }
 
     getRoom = slug => {
@@ -52,4 +54,13 @@ class RoomProvider extends Component {
 
 const RoomConsumer = RoomContext.Consumer;
 
+export function withRoomConsumer(Component){
+    return function ConsumerWrapper(props){
+        return <RoomConsumer>
+            {value => <Component {...props} context={value}/>}
+        </RoomConsumer>
+    }
+}
+
 export{ RoomProvider, RoomConsumer, RoomContext };
+
