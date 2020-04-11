@@ -59,7 +59,11 @@ const [mainImg,...defaultImg] = images;
                  ))}
              </div>
              <div className="single-room-info">
-                <article className="desc">
+             <article className="desc">
+              <h3>details</h3>
+              <p>{description}</p>
+            </article>
+                <article className="info">
                     <h3>info</h3>
                     <h6>price : #{price}</h6>  
                     <h6>size: ${size}Sqft</h6>   
