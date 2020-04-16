@@ -11,8 +11,8 @@ import Footer from '../components/Footer'
 export default function Home() {
     return ( 
         <>
-        <Hero>
-            <Banner title="Luxurious Apartments" subtitle="deluxe rooms starting at #300,000">
+        <Hero >
+            <Banner title="Find Apartments" subtitle="deluxe rooms starting at #300,000">
                 <Link to="/rooms" className="btn-primary">Apartments
                 </Link>
             </Banner>

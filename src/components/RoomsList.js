@@ -7,7 +7,7 @@ export default function RoomList({rooms}) {
         return (
             <div className="empty-search">
              <h3>
-                 no paramsss
+                 No Apartments Match
              </h3>
             </div>
         );

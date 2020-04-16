@@ -161,7 +161,7 @@ h6 {
 .defaultHero,
 .roomsHero {
   min-height: calc(100vh - 66px);
-  background: url("./images/defaultBcg.jpeg") center/cover no-repeat;
+  background: url("./images/defaultBcg.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -174,9 +174,10 @@ h6 {
 /* Banner */
 .banner {
   display: inline-block;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.2);
   color: var(--mainWhite);
   padding: 2rem 1rem;
+  border-radius: 20px;
   text-align: center;
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
@@ -225,7 +226,7 @@ h6 {
 .section-title div {
   width: 5rem;
   height: 5px;
-  margin: 0 auto;
+  margin: 20px auto;
   background: var(--primaryColor);
 }
 /* end of Title */
@@ -235,8 +236,11 @@ h6 {
   padding: 5rem 0;
 }
 .services {
-  background: var(--darkGrey);
+  background: white;
   text-align: center;
+}
+h9 {
+  font-size: 30px ;
 }
 .services-center {
   width: 90vw;

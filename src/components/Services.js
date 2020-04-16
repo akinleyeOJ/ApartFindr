@@ -7,14 +7,14 @@ export default class Services extends Component {
         services: [
             {
                 icon:<FaCocktail />,
-                title:"free cocktails",
-                info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco"
+                title:"What we stand for",
+                info: "We have created a free, simpler, convenient and effective way for apartment hunters to find their next property"
 
             },
             {
                 icon:<FaHiking />,
-                title:"free cocktails",
-                info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco"
+                title:"Perks",
+                info: "Up-to-date property information, available for free, accessible 24 hours a day to anyone with internet access and far more complete in terms of number of properties and depth of detail on each property than through other traditional advertising media."
 
             },
             {
@@ -23,18 +23,13 @@ export default class Services extends Component {
                 info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco"
 
             },
-            {
-                icon:<FaBeer />,
-                title:"free cocktails",
-                info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco"
-
-            }
+           
         ]
     };
     render() {
         return (
            <section className="services">
-                <Title title="services" />
+                <Title title="What We Offer" />
              <div className="services-center">
                  {this.state.services.map((item,index) => {
                      return ( 
