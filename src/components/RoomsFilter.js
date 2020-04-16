@@ -12,14 +12,10 @@ const RoomsFilter = ({ rooms }) => {
     const {
         handleChange,
         type,
-        capacity,
+        location,
         price,
         minPrice,
-        maxPrice,
-        minSize,
-        maxSize,
-        breakfast,
-        pets
+        maxPrice
     } = context;
 
     //get unique types
@@ -32,8 +28,8 @@ const RoomsFilter = ({ rooms }) => {
         {item}
         </option>
     ));
-    //get unique capacity
-      let people = getUnique(rooms, "capacity");
+    //get unique location
+      let people = getUnique(rooms, "location");
       people = people.map((item, index) => (
             <option value={item} key={index}>
                 {item}
@@ -59,13 +55,13 @@ const RoomsFilter = ({ rooms }) => {
              {/* End Select type */}
                {/* guests  */}
         <div className="form-group">
-          <label htmlFor="capacity">Guests</label>
+          <label htmlFor="location">Location</label>
           <select
-            name="capacity"
-            id="capacity"
+            name="location"
+            id="location"
             onChange={handleChange}
             className="form-control"
-            value={capacity}
+            value={location}
           >
             {people}
           </select>
@@ -73,7 +69,7 @@ const RoomsFilter = ({ rooms }) => {
         {/* end of guests */}
         {/* room price */}
         <div className="form-group">
-          <label htmlFor="price">room price ${price}</label>
+          <label htmlFor="price">room price ₦{price}</label>
           <input
             type="range"
             name="price"
@@ -86,50 +82,7 @@ const RoomsFilter = ({ rooms }) => {
           />
         </div>
         {/* end of room price*/}
-        {/* size */}
-        <div className="form-group">
-          <label htmlFor="price">room size </label>
-          <div className="size-inputs">
-            <input
-              type="number"
-              name="minSize"
-              value={minSize}
-              onChange={handleChange}
-              className="size-input"
-            />
-            <input
-              type="number"
-              name="maxSize"
-              value={maxSize}
-              onChange={handleChange}
-              className="size-input"
-            />
-          </div>
-        </div>
-        {/* end of select type */}
-        {/* extras */}
-        <div className="form-group">
-          <div className="single-extra">
-            <input
-              type="checkbox"
-              name="breakfast"
-              id="breakfast"
-              checked={breakfast}
-              onChange={handleChange}
-            />
-            <label htmlFor="breakfast">breakfast</label>
-          </div>
-          <div className="single-extra">
-            <input
-              type="checkbox"
-              name="pets"
-              checked={pets}
-              onChange={handleChange}
-            />
-            <label htmlFor="breakfast">pets</label>
-          </div>
-        </div>
-        {/* end of extras type */}
+     
       </form>
     </section>
   );

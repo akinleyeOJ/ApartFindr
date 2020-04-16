@@ -12,7 +12,7 @@ export default function Home() {
     return ( 
         <>
         <Hero >
-            <Banner title="Find Apartments" subtitle="deluxe rooms starting at #300,000">
+            <Banner title="Find Apartments" subtitle="rooms starting at ₦40,000">
                 <Link to="/rooms" className="btn-primary">Apartments
                 </Link>
             </Banner>

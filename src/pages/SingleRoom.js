@@ -34,12 +34,9 @@ static contextType = RoomContext;
         const {
             name, 
             description,
-            capacity,
-            size,
+            location,
             price,
             extras,
-            breakfast, 
-            pets,
             images
         } = room;
 const [mainImg,...defaultImg] = images;
@@ -65,15 +62,13 @@ const [mainImg,...defaultImg] = images;
             </article>
                 <article className="info">
                     <h3>info</h3>
-                    <h6>price : #{price}</h6>  
-                    <h6>size: ${size}Sqft</h6>   
+                    <h6>price : ₦{price}</h6>  
                     <h6>
-                        max capacity : {""}
-                        {capacity > 1 ? `${capacity} people` :
-                          `${capacity} person`}
-                    </h6>  
-                    <h6>{pets? "pets allowed" : "no pets allowed"}</h6> 
-                 <h6>{breakfast && "free breakfast included"}</h6>       
+                        location : {""}
+                        {location > 1 ? `${location}` :
+                          `${location}, Nigeria`}
+                    </h6> 
+                     
                 </article>
              </div>
            </section>
