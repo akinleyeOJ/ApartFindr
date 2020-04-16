@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom';
 import Services from '../components/Services';
 import Naira from 'react-naira';
 import FeaturedRooms from '../components/FeaturedRooms';
+import Footer from '../components/Footer'
 
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
         </Hero>
         <Services />
         <FeaturedRooms />
+        <Footer />
         </>
     );
     
