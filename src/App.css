@@ -73,6 +73,7 @@ h6 {
   text-transform: capitalize;
   text-align: center;
   margin-top: 3rem;
+
 }
 .error {
   text-align: center;
@@ -149,6 +150,7 @@ h6 {
     display: flex;
     margin-left: 4rem;
   }
+ 
   .nav-links a {
     margin: 0 1rem;
     padding: 0.5rem 0;
@@ -568,10 +570,10 @@ h6 {
 }
 
 .footer-distributed .footer-company-name{
-	color:  #222;
-	font-size: 14px;
+	color:  white;
+	font-size: 17px;
 	font-weight: normal;
-	margin: 0;
+	margin: 25px;
 }
 
 /* Footer Center */

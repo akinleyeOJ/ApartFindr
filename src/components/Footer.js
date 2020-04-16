@@ -1,5 +1,6 @@
 import React from 'react';
 import {FaCocktail, FaHiking, FaShuttleVan, FaBeer, FaInstagram, FaFacebook, FaTwitterSquare } from "react-icons/fa";
+import {Link} from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -7,14 +8,16 @@ const Footer = () => {
   <div className="footer-left">
     <h3>Company<span>logo</span></h3>
     <p className="footer-links">
-      <a href="#" className="link-1">Home</a>
-      <a href="#">Blog</a>
-      <a href="#">Pricing</a>
-      <a href="#">About</a>
-      <a href="#">Faq</a>
-      <a href="#">Contact</a>
+	<a href="/" class="link-1">Home </a>
+					
+					<a href="/rooms">Apartments</a>
+				
+					<a href="#">About</a>
+					
+					<a href="#">Faq</a>
+				
     </p>
-    <p className="footer-company-name">Company Name © 2015</p>
+    <p className="footer-company-name">ApartFindr © 2020</p>
   </div>
   <div className="footer-center">
     <div>
@@ -23,17 +26,21 @@ const Footer = () => {
     </div>
     <div>
     <i className="fa fa-envelope" />
-      <p>+1.555.555.5555</p>
+      <p>+234 806 901 2426</p>
     </div>
     <div>
       <i className="fa fa-envelope" />
-      <p><a href="mailto:support@company.com">support@company.com</a></p>
+      <p><a href="mailto:apartfindr@gmail.com">apartfindr@gmail.com</a></p>
     </div>
   </div>
   <div className="footer-right">
     <p className="footer-company-about">
-      <span>About the company</span>
-      Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+      <span>Advertise With Us</span>
+Advertise/Market Your Property
+Featured Real Estate Companies
+Place Banner Adverts
+
++2348069012426
     </p>
     <div className="footer-icons">
       <a href="#"><FaFacebook /></a>
