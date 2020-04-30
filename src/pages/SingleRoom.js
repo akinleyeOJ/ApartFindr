@@ -43,7 +43,7 @@ const [mainImg,...defaultImg] = images;
         return (
             <>
            <StyledHero img={mainImg || this.state.defaultBcg}>
-              <Banner title={`${name} room`}>
+              <Banner title={`${name} Apartment`}>
                   <Link to="/rooms" className="btn-primary">
                       back to rooms
                   </Link>
@@ -73,7 +73,7 @@ const [mainImg,...defaultImg] = images;
              </div>
            </section>
            <section className="room-extras">
-               <h6>extras</h6>
+               <h6>Contact</h6>
                <ul className="extras">
                    {extras.map((item, index) => {
                        return <li key={index}>- {item}</li>;
