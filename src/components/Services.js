@@ -20,7 +20,7 @@ export default class Services extends Component {
             {
                 icon:<FaShuttleVan />,
                 title:"Direct Contact With Seller",
-                info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco"
+                info: "We do not collect any agent fee. Do not pay in advance. Try to meet at a safe, public location. Check the apartment out. Pay only after sactisfied."
 
             },
            
