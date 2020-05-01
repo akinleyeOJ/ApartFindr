@@ -22,11 +22,11 @@ const Footer = () => {
   <div className="footer-center">
     <div>
       <i className="fa fa-map-marker" />
-      <p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
+      <p><span>5, Ijaye Crescent</span> Agege, Lagos</p>
     </div>
     <div>
     <i className="fa fa-envelope" />
-      <p>+234 806 901 2426</p>
+      <p>+234 806 901 2429</p>
     </div>
     <div>
       <i className="fa fa-envelope" />
