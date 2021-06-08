@@ -101,12 +101,6 @@ class RoomProvider extends Component {
        // filter by price
        tempRooms = tempRooms.filter(room => room.price <= price);
 
-  
-       
-       //filter by breakfast
- 
-       //filter by pets
-
        
        // change state
        this.setState({
